@@ -251,7 +251,7 @@
     <Content Include="Images\logo.png" />
     <Content Include="Properties\PublishProfiles\bnh.pubxml.user" />
     <Content Include="Scripts\CommunityEdit.js" />
-    <Content Include="Scripts\CommunityIndex.js" />      
+    <Content Include="Scripts\CommunityIndex.js" />
     <Content Include="Scripts\Global.Encoding.js" />
     <Content Include="Scripts\jquery-1.7.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.2.js" />

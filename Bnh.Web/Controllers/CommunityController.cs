@@ -40,12 +40,12 @@ namespace Bnh.Controllers
         {
             ViewBag.ZoneId = new SelectList(db.Zones, "Id", "Name");
             using(var cm = new CmsEntities())
-            {
+            {/*
                 var sceneTemplates = from s in cm.Scenes
                                      from t in cm.SceneTemplates
                                      where s.OwnerGuidId == t.Id
                                      select new { id = s.Id, title = t.Title };
-                ViewBag.Templates = new SelectList(sceneTemplates.ToList(), "id", "title");
+                ViewBag.Templates = new SelectList(sceneTemplates.ToList(), "id", "title");*/
             }
             return View();
         } 
@@ -65,7 +65,7 @@ namespace Bnh.Controllers
 
                 var templateSceneIdString = this.Request.Form["templateSceneId"];
                 if (!string.IsNullOrEmpty(templateSceneIdString))
-                {
+                {/*
                     // NOTE: make sure community ID is already created when move to "code first"
                     using (var cms = new CmsEntities())
                     {
@@ -74,7 +74,7 @@ namespace Bnh.Controllers
                         var templateScene = cms.Scenes.First(s => s.Id == templateSceneId);
                         scene.ApplyTemplate(cms, templateScene);
                         cms.SaveChanges();
-                    }
+                    }*/
                 }
                 return RedirectToAction("Index");  
             }
